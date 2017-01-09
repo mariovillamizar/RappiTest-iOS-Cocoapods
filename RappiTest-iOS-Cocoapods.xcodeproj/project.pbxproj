@@ -14,6 +14,7 @@
 		A983C6391E2402F500D531BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6371E2402F500D531BA /* LaunchScreen.storyboard */; };
 		A983C6441E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6431E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift */; };
 		A983C64F1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */; };
+		AF5529FB96F6189376A09590 /* Pods_RappiTest_iOS_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3ED0875E56ABCCF972EA220E /* Pods-RappiTest-iOS-Cocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTest-iOS-Cocoapods.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods.release.xcconfig"; sourceTree = "<group>"; };
+		7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiTest_iOS_Cocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RappiTest-iOS-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C62E1E2402F500D531BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A983C6301E2402F500D531BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		A983C64A1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RappiTest-iOS-CocoapodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiTest_iOS_CocoapodsUITests.swift; sourceTree = "<group>"; };
 		A983C6501E2402F500D531BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6E6DC372CA3C094A7843E57 /* Pods-RappiTest-iOS-Cocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5529FB96F6189376A09590 /* Pods_RappiTest_iOS_Cocoapods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08658C0DC04F80266A558948 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A8F4478477EAD89179732D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6E6DC372CA3C094A7843E57 /* Pods-RappiTest-iOS-Cocoapods.debug.xcconfig */,
+				3ED0875E56ABCCF972EA220E /* Pods-RappiTest-iOS-Cocoapods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A983C6221E2402F400D531BA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				A983C6421E2402F500D531BA /* RappiTest-iOS-CocoapodsTests */,
 				A983C64D1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests */,
 				A983C62C1E2402F400D531BA /* Products */,
+				1A8F4478477EAD89179732D7 /* Pods */,
+				08658C0DC04F80266A558948 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A983C6531E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-Cocoapods" */;
 			buildPhases = (
+				93D5A8ADE5E5FE78E9958AFC /* [CP] Check Pods Manifest.lock */,
 				A983C6271E2402F400D531BA /* Sources */,
 				A983C6281E2402F400D531BA /* Frameworks */,
 				A983C6291E2402F400D531BA /* Resources */,
+				938951D38B2929FA41949BA9 /* [CP] Embed Pods Frameworks */,
+				EE5B3E2068B73241E67B48CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		938951D38B2929FA41949BA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D5A8ADE5E5FE78E9958AFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5B3E2068B73241E67B48CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A983C6271E2402F400D531BA /* Sources */ = {
@@ -402,6 +477,7 @@
 		};
 		A983C6541E2402F500D531BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E6DC372CA3C094A7843E57 /* Pods-RappiTest-iOS-Cocoapods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RappiTest-iOS-Cocoapods/Info.plist";
@@ -413,6 +489,7 @@
 		};
 		A983C6551E2402F500D531BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED0875E56ABCCF972EA220E /* Pods-RappiTest-iOS-Cocoapods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RappiTest-iOS-Cocoapods/Info.plist";
