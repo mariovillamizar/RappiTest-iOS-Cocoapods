@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ApplicationListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        iTunesClient.shared.getFreeApplications { (applications, error) in
+            if error == nil {
+                if applications != nil {
+                    
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

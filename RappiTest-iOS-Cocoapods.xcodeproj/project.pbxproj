@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C62E1E2402F500D531BA /* AppDelegate.swift */; };
-		A983C6311E2402F500D531BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6301E2402F500D531BA /* ViewController.swift */; };
+		A983C6311E2402F500D531BA /* ApplicationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6301E2402F500D531BA /* ApplicationListViewController.swift */; };
 		A983C6341E2402F500D531BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6321E2402F500D531BA /* Main.storyboard */; };
 		A983C6361E2402F500D531BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A983C6351E2402F500D531BA /* Assets.xcassets */; };
 		A983C6391E2402F500D531BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6371E2402F500D531BA /* LaunchScreen.storyboard */; };
 		A983C6441E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6431E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift */; };
 		A983C64F1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */; };
+		A983C6601E24062200D531BA /* iTunesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C65F1E24062200D531BA /* iTunesClient.swift */; };
+		A983C6621E24062900D531BA /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6611E24062900D531BA /* Application.swift */; };
 		AF5529FB96F6189376A09590 /* Pods_RappiTest_iOS_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +41,7 @@
 		7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiTest_iOS_Cocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RappiTest-iOS-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C62E1E2402F500D531BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A983C6301E2402F500D531BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A983C6301E2402F500D531BA /* ApplicationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListViewController.swift; sourceTree = "<group>"; };
 		A983C6331E2402F500D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A983C6351E2402F500D531BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A983C6381E2402F500D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		A983C64A1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RappiTest-iOS-CocoapodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiTest_iOS_CocoapodsUITests.swift; sourceTree = "<group>"; };
 		A983C6501E2402F500D531BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A983C65F1E24062200D531BA /* iTunesClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iTunesClient.swift; path = iTunesAPI/Client/iTunesClient.swift; sourceTree = "<group>"; };
+		A983C6611E24062900D531BA /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Application.swift; path = iTunesAPI/Models/Application.swift; sourceTree = "<group>"; };
 		F6E6DC372CA3C094A7843E57 /* Pods-RappiTest-iOS-Cocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,11 +126,12 @@
 			isa = PBXGroup;
 			children = (
 				A983C62E1E2402F500D531BA /* AppDelegate.swift */,
-				A983C6301E2402F500D531BA /* ViewController.swift */,
+				A983C6301E2402F500D531BA /* ApplicationListViewController.swift */,
 				A983C6321E2402F500D531BA /* Main.storyboard */,
 				A983C6351E2402F500D531BA /* Assets.xcassets */,
 				A983C6371E2402F500D531BA /* LaunchScreen.storyboard */,
 				A983C63A1E2402F500D531BA /* Info.plist */,
+				A983C65C1E2405E800D531BA /* iTunesAPI */,
 			);
 			path = "RappiTest-iOS-Cocoapods";
 			sourceTree = "<group>";
@@ -147,6 +152,31 @@
 				A983C6501E2402F500D531BA /* Info.plist */,
 			);
 			path = "RappiTest-iOS-CocoapodsUITests";
+			sourceTree = "<group>";
+		};
+		A983C65C1E2405E800D531BA /* iTunesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A983C65D1E24060A00D531BA /* Models */,
+				A983C65E1E24060F00D531BA /* Client */,
+			);
+			name = iTunesAPI;
+			sourceTree = "<group>";
+		};
+		A983C65D1E24060A00D531BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A983C6611E24062900D531BA /* Application.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A983C65E1E24060F00D531BA /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				A983C65F1E24062200D531BA /* iTunesClient.swift */,
+			);
+			name = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +364,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A983C6311E2402F500D531BA /* ViewController.swift in Sources */,
+				A983C6621E24062900D531BA /* Application.swift in Sources */,
+				A983C6311E2402F500D531BA /* ApplicationListViewController.swift in Sources */,
+				A983C6601E24062200D531BA /* iTunesClient.swift in Sources */,
 				A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +596,7 @@
 				A983C6551E2402F500D531BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A983C6561E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-CocoapodsTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +605,7 @@
 				A983C6581E2402F500D531BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A983C6591E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-CocoapodsUITests" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +614,7 @@
 				A983C65B1E2402F500D531BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
