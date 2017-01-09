@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AppCollectionViewController.swift
 //  RappiTest-iOS-Cocoapods
 //
 //  Created by Mario Andres Villamizar Palacio on 1/9/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ApplicationListViewController: UIViewController {
+class AppCollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

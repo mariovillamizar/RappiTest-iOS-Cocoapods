@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fN6-X6-aaW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Application List-->
+        <scene sceneID="Lca-za-xH1">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ba6-RO-mWJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NiH-qL-MGV"/>
+                        <viewControllerLayoutGuide type="bottom" id="vda-jH-YFx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iwq-24-82I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Application List" id="5QL-nJ-vui">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="An4-xT-LVF"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5s-vE-HhZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VfO-3G-cUe">
+            <objects>
+                <navigationController id="fN6-X6-aaW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jpF-qB-pYz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ba6-RO-mWJ" kind="relationship" relationship="rootViewController" id="Fpj-3C-oxO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHA-Px-jqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="135"/>
+        </scene>
+    </scenes>
+</document>
