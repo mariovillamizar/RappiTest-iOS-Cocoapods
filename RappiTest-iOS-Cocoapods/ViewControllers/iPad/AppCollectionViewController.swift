@@ -8,25 +8,59 @@
 
 import UIKit
 
-class AppCollectionViewController: UIViewController {
-
+class AppCollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var appCollectionView: UICollectionView!
+    
+    
+    // MARK: - Properties
+    private var appList: [App] = []
+    
+    
+    // MARK: - View Controller Lifecycle Methoda
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        iTunesClient.shared.getFreeApplications { (applications, error) in
-            if error == nil {
-                if applications != nil {
-                    
-                }
-            }
-        }
+        self.getAppsAndUpdateCollection()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - Data Source Methods
+    
+    func getAppsAndUpdateCollection() {
+        iTunesClient.shared.getFreeApplications { (apps, error) in
+            if error == nil {
+                if apps != nil {
+                    self.appList = apps!
+                    self.appCollectionView.reloadData()
+                }
+            }
+        }
+    }
+    
+    // MARK: - UICollectionView Delegate, DataSource & Layout Methods
+    
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.appList.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("appCollectionCell", forIndexPath: indexPath) as! AppCollectionViewCell
+        cell.app = self.appList[indexPath.row]
+        return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        (cell as! AppCollectionViewCell).setData()
+    }
 
 }
 

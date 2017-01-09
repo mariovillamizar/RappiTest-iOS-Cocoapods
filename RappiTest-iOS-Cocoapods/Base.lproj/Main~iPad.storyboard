@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Application List-->
         <scene sceneID="Lca-za-xH1">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ba6-RO-mWJ" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ba6-RO-mWJ" customClass="AppCollectionViewController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NiH-qL-MGV"/>
                         <viewControllerLayoutGuide type="bottom" id="vda-jH-YFx"/>
@@ -16,11 +17,108 @@
                     <view key="view" contentMode="scaleToFill" id="Iwq-24-82I">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uMd-cB-hYK">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="50" id="LQq-eb-uKZ">
+                                    <size key="itemSize" width="100" height="155"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="50" minY="50" maxX="50" maxY="50"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="appCollectionCell" id="ykJ-KW-FEE" customClass="AppCollectionViewCell" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="50" width="100" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kac-aw-vkE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Kac-aw-vkE" secondAttribute="height" multiplier="1:1" id="rKC-F9-mmd"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVf-M4-ozO">
+                                                    <rect key="frame" x="3" y="121" width="94" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="b5U-h2-1pZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXj-0h-TVd">
+                                                    <rect key="frame" x="3" y="103" width="94" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="BjZ-bc-mdu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Kac-aw-vkE" firstAttribute="top" secondItem="ykJ-KW-FEE" secondAttribute="top" id="0Bo-7V-vmO"/>
+                                            <constraint firstItem="Kac-aw-vkE" firstAttribute="leading" secondItem="ykJ-KW-FEE" secondAttribute="leading" id="H8r-XA-7YI"/>
+                                            <constraint firstItem="MVf-M4-ozO" firstAttribute="leading" secondItem="ykJ-KW-FEE" secondAttribute="leading" constant="3" id="fYE-tr-Sb6"/>
+                                            <constraint firstItem="DXj-0h-TVd" firstAttribute="top" secondItem="Kac-aw-vkE" secondAttribute="bottom" constant="3" id="hMp-wW-j59"/>
+                                            <constraint firstAttribute="trailing" secondItem="MVf-M4-ozO" secondAttribute="trailing" constant="3" id="ivM-Ub-vUY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kac-aw-vkE" secondAttribute="trailing" id="kJD-qP-Tkh"/>
+                                            <constraint firstItem="DXj-0h-TVd" firstAttribute="leading" secondItem="ykJ-KW-FEE" secondAttribute="leading" constant="3" id="r9F-BX-ItH"/>
+                                            <constraint firstItem="MVf-M4-ozO" firstAttribute="top" secondItem="DXj-0h-TVd" secondAttribute="bottom" constant="3" id="tZZ-Ib-uUa"/>
+                                            <constraint firstAttribute="trailing" secondItem="DXj-0h-TVd" secondAttribute="trailing" constant="3" id="xdZ-lu-BHX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="appCompanyLabel" destination="MVf-M4-ozO" id="HqG-Nf-BPY"/>
+                                            <outlet property="appIconImageView" destination="Kac-aw-vkE" id="Pp5-oI-dgO"/>
+                                            <outlet property="appNameLabel" destination="DXj-0h-TVd" id="Tk2-Aj-RMU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ba6-RO-mWJ" id="6M7-xv-nQo"/>
+                                    <outlet property="delegate" destination="Ba6-RO-mWJ" id="Lro-Fj-ghg"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uMd-cB-hYK" secondAttribute="trailing" id="E3F-M4-wFN"/>
+                            <constraint firstItem="vda-jH-YFx" firstAttribute="top" secondItem="uMd-cB-hYK" secondAttribute="bottom" id="U7B-rE-1e9"/>
+                            <constraint firstItem="uMd-cB-hYK" firstAttribute="leading" secondItem="Iwq-24-82I" secondAttribute="leading" id="W7r-Lh-S4G"/>
+                            <constraint firstItem="uMd-cB-hYK" firstAttribute="top" secondItem="NiH-qL-MGV" secondAttribute="bottom" id="oe0-ld-OcW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Application List" id="5QL-nJ-vui">
                         <barButtonItem key="backBarButtonItem" title="Back" id="An4-xT-LVF"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="appCollectionView" destination="uMd-cB-hYK" id="sCT-3d-K8s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5s-vE-HhZ" sceneMemberID="firstResponder"/>
             </objects>

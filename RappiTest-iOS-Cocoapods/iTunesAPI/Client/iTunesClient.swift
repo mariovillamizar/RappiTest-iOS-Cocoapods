@@ -18,7 +18,7 @@ class iTunesClient: NSObject {
     
     // MARK: - Queries
     
-    func getFreeApplications(completionHandler: (applications: [Application]?, error: NSError?) -> Void) {
+    func getFreeApplications(completionHandler: (apps: [App]?, error: NSError?) -> Void) {
         
         let endPoint = "topfreeapplications/limit=20/json"
         let url = iTunesBaseURL + endPoint
@@ -27,11 +27,11 @@ class iTunesClient: NSObject {
             switch response.result {
             case .Success:
                 if let JSON = (response.result.value as? [String: AnyObject])!["feed"]!["entry"] {
-                    let applications = Mapper<Application>().mapArray(JSON)
-                    completionHandler(applications: applications, error: nil)
+                    let applications = Mapper<App>().mapArray(JSON)
+                    completionHandler(apps: applications, error: nil)
                 }
             case .Failure(let error):
-                completionHandler(applications: nil, error: error)
+                completionHandler(apps: nil, error: error)
             }
         }
     }

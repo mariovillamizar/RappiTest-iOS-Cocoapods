@@ -14,9 +14,14 @@
 		A983C6441E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6431E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift */; };
 		A983C64F1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */; };
 		A983C6601E24062200D531BA /* iTunesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C65F1E24062200D531BA /* iTunesClient.swift */; };
-		A983C6621E24062900D531BA /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6611E24062900D531BA /* Application.swift */; };
+		A983C6621E24062900D531BA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6611E24062900D531BA /* App.swift */; };
 		A983C66B1E241E4900D531BA /* AppCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C66A1E241E4900D531BA /* AppCollectionViewController.swift */; };
 		A983C66F1E241F7600D531BA /* Main~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C66D1E241F7600D531BA /* Main~iPad.storyboard */; };
+		A983C6731E2425C000D531BA /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6721E2425C000D531BA /* AppCollectionViewCell.swift */; };
+		A983C6761E24296800D531BA /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6741E24296800D531BA /* UINavigationController+Extension.swift */; };
+		A983C6771E24296800D531BA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6751E24296800D531BA /* UIView+Extension.swift */; };
+		A983C6791E242DD500D531BA /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6781E242DD500D531BA /* AppListViewController.swift */; };
+		A983C67C1E242F8200D531BA /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C67B1E242F8200D531BA /* AppTableViewCell.swift */; };
 		AF5529FB96F6189376A09590 /* Pods_RappiTest_iOS_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +58,14 @@
 		A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiTest_iOS_CocoapodsUITests.swift; sourceTree = "<group>"; };
 		A983C6501E2402F500D531BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A983C65F1E24062200D531BA /* iTunesClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iTunesClient.swift; path = iTunesAPI/Client/iTunesClient.swift; sourceTree = "<group>"; };
-		A983C6611E24062900D531BA /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Application.swift; path = iTunesAPI/Models/Application.swift; sourceTree = "<group>"; };
+		A983C6611E24062900D531BA /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = iTunesAPI/Models/App.swift; sourceTree = "<group>"; };
 		A983C66A1E241E4900D531BA /* AppCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCollectionViewController.swift; path = ViewControllers/iPad/AppCollectionViewController.swift; sourceTree = "<group>"; };
 		A983C66E1E241F7600D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main~iPad.storyboard"; sourceTree = "<group>"; };
+		A983C6721E2425C000D531BA /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCollectionViewCell.swift; path = ViewControllers/iPad/Cells/AppCollectionViewCell.swift; sourceTree = "<group>"; };
+		A983C6741E24296800D531BA /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Extension.swift"; path = "Extensions/UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		A983C6751E24296800D531BA /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Extensions/UIView+Extension.swift"; sourceTree = "<group>"; };
+		A983C6781E242DD500D531BA /* AppListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppListViewController.swift; path = ViewControllers/iPhone/AppListViewController.swift; sourceTree = "<group>"; };
+		A983C67B1E242F8200D531BA /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppTableViewCell.swift; path = ViewControllers/iPhone/Cells/AppTableViewCell.swift; sourceTree = "<group>"; };
 		F6E6DC372CA3C094A7843E57 /* Pods-RappiTest-iOS-Cocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,7 +178,7 @@
 		A983C65D1E24060A00D531BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A983C6611E24062900D531BA /* Application.swift */,
+				A983C6611E24062900D531BA /* App.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -193,6 +203,8 @@
 		A983C6681E241E1400D531BA /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				A983C6781E242DD500D531BA /* AppListViewController.swift */,
+				A983C67A1E242F4600D531BA /* Cells */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -201,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				A983C66A1E241E4900D531BA /* AppCollectionViewController.swift */,
+				A983C6711E24259500D531BA /* Cells */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -208,6 +221,8 @@
 		A983C66C1E241E5000D531BA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A983C6741E24296800D531BA /* UINavigationController+Extension.swift */,
+				A983C6751E24296800D531BA /* UIView+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -220,6 +235,22 @@
 				A983C66D1E241F7600D531BA /* Main~iPad.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A983C6711E24259500D531BA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A983C6721E2425C000D531BA /* AppCollectionViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		A983C67A1E242F4600D531BA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A983C67B1E242F8200D531BA /* AppTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,10 +439,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A983C6621E24062900D531BA /* Application.swift in Sources */,
+				A983C6621E24062900D531BA /* App.swift in Sources */,
+				A983C6771E24296800D531BA /* UIView+Extension.swift in Sources */,
+				A983C6791E242DD500D531BA /* AppListViewController.swift in Sources */,
 				A983C6601E24062200D531BA /* iTunesClient.swift in Sources */,
 				A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */,
+				A983C67C1E242F8200D531BA /* AppTableViewCell.swift in Sources */,
 				A983C66B1E241E4900D531BA /* AppCollectionViewController.swift in Sources */,
+				A983C6731E2425C000D531BA /* AppCollectionViewCell.swift in Sources */,
+				A983C6761E24296800D531BA /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

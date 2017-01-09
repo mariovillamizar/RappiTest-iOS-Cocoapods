@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Application: Mappable {
+class App: Mappable {
 
     var name: String?
     var images: [Image]?
@@ -30,7 +30,7 @@ class Application: Mappable {
     
     func mapping(map: Map) {
         name            <- map["im:name.label"]
-        images          <- map["im_image"]
+        images          <- map["im:image"]
         summary         <- map["summary.label"]
         price           <- map["im:price"]
         contentType     <- map["im:contentType.attributes.label"]

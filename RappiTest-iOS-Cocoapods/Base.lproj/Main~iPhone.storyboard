@@ -3,12 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Application List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="AppListViewController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,93 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="91" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="WnE-st-QXR">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="appListCell" id="QUn-J9-0on" customClass="AppTableViewCell" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="600" height="91"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QUn-J9-0on" id="7Ki-b1-LAx">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zW9-vT-K0i">
+                                                    <rect key="frame" x="8" y="8" width="74" height="74"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="zW9-vT-K0i" secondAttribute="height" multiplier="1:1" id="piQ-Rm-Xq0"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPK-rd-xBF">
+                                                    <rect key="frame" x="94" y="19" width="498" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="dNv-J7-bsz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnN-uK-iF6">
+                                                    <rect key="frame" x="94" y="37" width="498" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="FyO-S4-goj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="rPK-rd-xBF" secondAttribute="trailing" constant="8" id="9KW-Sv-9aP"/>
+                                                <constraint firstItem="rPK-rd-xBF" firstAttribute="leading" secondItem="zW9-vT-K0i" secondAttribute="trailing" constant="12" id="Sor-QP-gbh"/>
+                                                <constraint firstItem="PnN-uK-iF6" firstAttribute="leading" secondItem="zW9-vT-K0i" secondAttribute="trailing" constant="12" id="TDf-z8-t4E"/>
+                                                <constraint firstItem="zW9-vT-K0i" firstAttribute="leading" secondItem="7Ki-b1-LAx" secondAttribute="leading" constant="8" id="Thc-1B-j4K"/>
+                                                <constraint firstItem="zW9-vT-K0i" firstAttribute="top" secondItem="rPK-rd-xBF" secondAttribute="centerY" multiplier="0.3" id="UOJ-Ro-ee2"/>
+                                                <constraint firstItem="zW9-vT-K0i" firstAttribute="top" secondItem="7Ki-b1-LAx" secondAttribute="top" constant="8" id="Y21-oP-u7o"/>
+                                                <constraint firstAttribute="trailing" secondItem="PnN-uK-iF6" secondAttribute="trailing" constant="8" id="Yqy-V4-GBL"/>
+                                                <constraint firstAttribute="bottom" secondItem="zW9-vT-K0i" secondAttribute="bottom" constant="8" id="dcQ-yB-1zt"/>
+                                                <constraint firstItem="PnN-uK-iF6" firstAttribute="top" secondItem="rPK-rd-xBF" secondAttribute="bottom" constant="3" id="q9i-eO-JBZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="appCompanyLabel" destination="PnN-uK-iF6" id="Mig-VI-MZl"/>
+                                            <outlet property="appIconImageView" destination="zW9-vT-K0i" id="eIS-Ca-33M"/>
+                                            <outlet property="appNameLabel" destination="rPK-rd-xBF" id="iBE-8Q-bRJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="SRJ-wH-iws"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ct2-Lm-dh5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WnE-st-QXR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2DJ-5C-0nl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WnE-st-QXR" secondAttribute="bottom" id="ZFa-10-4PU"/>
+                            <constraint firstItem="WnE-st-QXR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eL2-Wq-bTu"/>
+                            <constraint firstAttribute="trailing" secondItem="WnE-st-QXR" secondAttribute="trailing" id="mc3-lN-lia"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Application List" id="quo-fW-SQY">
                         <barButtonItem key="backBarButtonItem" title="Back" id="C0Q-Zx-F8u"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="appsTableView" destination="WnE-st-QXR" id="x8j-1l-GkL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
