@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C62E1E2402F500D531BA /* AppDelegate.swift */; };
+		A983C6311E2402F500D531BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6301E2402F500D531BA /* ViewController.swift */; };
+		A983C6341E2402F500D531BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6321E2402F500D531BA /* Main.storyboard */; };
+		A983C6361E2402F500D531BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A983C6351E2402F500D531BA /* Assets.xcassets */; };
+		A983C6391E2402F500D531BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6371E2402F500D531BA /* LaunchScreen.storyboard */; };
+		A983C6441E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6431E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift */; };
+		A983C64F1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A983C6401E2402F500D531BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A983C6231E2402F400D531BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A983C62A1E2402F400D531BA;
+			remoteInfo = "RappiTest-iOS-Cocoapods";
+		};
+		A983C64B1E2402F500D531BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A983C6231E2402F400D531BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A983C62A1E2402F400D531BA;
+			remoteInfo = "RappiTest-iOS-Cocoapods";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RappiTest-iOS-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A983C62E1E2402F500D531BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A983C6301E2402F500D531BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A983C6331E2402F500D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A983C6351E2402F500D531BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A983C6381E2402F500D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A983C63A1E2402F500D531BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A983C63F1E2402F500D531BA /* RappiTest-iOS-CocoapodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RappiTest-iOS-CocoapodsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A983C6431E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiTest_iOS_CocoapodsTests.swift; sourceTree = "<group>"; };
+		A983C6451E2402F500D531BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A983C64A1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RappiTest-iOS-CocoapodsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RappiTest_iOS_CocoapodsUITests.swift; sourceTree = "<group>"; };
+		A983C6501E2402F500D531BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A983C6281E2402F400D531BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A983C63C1E2402F500D531BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A983C6471E2402F500D531BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A983C6221E2402F400D531BA = {
+			isa = PBXGroup;
+			children = (
+				A983C62D1E2402F500D531BA /* RappiTest-iOS-Cocoapods */,
+				A983C6421E2402F500D531BA /* RappiTest-iOS-CocoapodsTests */,
+				A983C64D1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests */,
+				A983C62C1E2402F400D531BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A983C62C1E2402F400D531BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */,
+				A983C63F1E2402F500D531BA /* RappiTest-iOS-CocoapodsTests.xctest */,
+				A983C64A1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A983C62D1E2402F500D531BA /* RappiTest-iOS-Cocoapods */ = {
+			isa = PBXGroup;
+			children = (
+				A983C62E1E2402F500D531BA /* AppDelegate.swift */,
+				A983C6301E2402F500D531BA /* ViewController.swift */,
+				A983C6321E2402F500D531BA /* Main.storyboard */,
+				A983C6351E2402F500D531BA /* Assets.xcassets */,
+				A983C6371E2402F500D531BA /* LaunchScreen.storyboard */,
+				A983C63A1E2402F500D531BA /* Info.plist */,
+			);
+			path = "RappiTest-iOS-Cocoapods";
+			sourceTree = "<group>";
+		};
+		A983C6421E2402F500D531BA /* RappiTest-iOS-CocoapodsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A983C6431E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift */,
+				A983C6451E2402F500D531BA /* Info.plist */,
+			);
+			path = "RappiTest-iOS-CocoapodsTests";
+			sourceTree = "<group>";
+		};
+		A983C64D1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A983C64E1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift */,
+				A983C6501E2402F500D531BA /* Info.plist */,
+			);
+			path = "RappiTest-iOS-CocoapodsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A983C62A1E2402F400D531BA /* RappiTest-iOS-Cocoapods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A983C6531E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-Cocoapods" */;
+			buildPhases = (
+				A983C6271E2402F400D531BA /* Sources */,
+				A983C6281E2402F400D531BA /* Frameworks */,
+				A983C6291E2402F400D531BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RappiTest-iOS-Cocoapods";
+			productName = "RappiTest-iOS-Cocoapods";
+			productReference = A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A983C63E1E2402F500D531BA /* RappiTest-iOS-CocoapodsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A983C6561E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-CocoapodsTests" */;
+			buildPhases = (
+				A983C63B1E2402F500D531BA /* Sources */,
+				A983C63C1E2402F500D531BA /* Frameworks */,
+				A983C63D1E2402F500D531BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A983C6411E2402F500D531BA /* PBXTargetDependency */,
+			);
+			name = "RappiTest-iOS-CocoapodsTests";
+			productName = "RappiTest-iOS-CocoapodsTests";
+			productReference = A983C63F1E2402F500D531BA /* RappiTest-iOS-CocoapodsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A983C6491E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A983C6591E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-CocoapodsUITests" */;
+			buildPhases = (
+				A983C6461E2402F500D531BA /* Sources */,
+				A983C6471E2402F500D531BA /* Frameworks */,
+				A983C6481E2402F500D531BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A983C64C1E2402F500D531BA /* PBXTargetDependency */,
+			);
+			name = "RappiTest-iOS-CocoapodsUITests";
+			productName = "RappiTest-iOS-CocoapodsUITests";
+			productReference = A983C64A1E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A983C6231E2402F400D531BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Mario Andres Villamizar Palacio";
+				TargetAttributes = {
+					A983C62A1E2402F400D531BA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XP3GDZWZT7;
+					};
+					A983C63E1E2402F500D531BA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XP3GDZWZT7;
+						TestTargetID = A983C62A1E2402F400D531BA;
+					};
+					A983C6491E2402F500D531BA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XP3GDZWZT7;
+						TestTargetID = A983C62A1E2402F400D531BA;
+					};
+				};
+			};
+			buildConfigurationList = A983C6261E2402F400D531BA /* Build configuration list for PBXProject "RappiTest-iOS-Cocoapods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A983C6221E2402F400D531BA;
+			productRefGroup = A983C62C1E2402F400D531BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A983C62A1E2402F400D531BA /* RappiTest-iOS-Cocoapods */,
+				A983C63E1E2402F500D531BA /* RappiTest-iOS-CocoapodsTests */,
+				A983C6491E2402F500D531BA /* RappiTest-iOS-CocoapodsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A983C6291E2402F400D531BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A983C6391E2402F500D531BA /* LaunchScreen.storyboard in Resources */,
+				A983C6361E2402F500D531BA /* Assets.xcassets in Resources */,
+				A983C6341E2402F500D531BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A983C63D1E2402F500D531BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A983C6481E2402F500D531BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A983C6271E2402F400D531BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A983C6311E2402F500D531BA /* ViewController.swift in Sources */,
+				A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A983C63B1E2402F500D531BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A983C6441E2402F500D531BA /* RappiTest_iOS_CocoapodsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A983C6461E2402F500D531BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A983C64F1E2402F500D531BA /* RappiTest_iOS_CocoapodsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A983C6411E2402F500D531BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A983C62A1E2402F400D531BA /* RappiTest-iOS-Cocoapods */;
+			targetProxy = A983C6401E2402F500D531BA /* PBXContainerItemProxy */;
+		};
+		A983C64C1E2402F500D531BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A983C62A1E2402F400D531BA /* RappiTest-iOS-Cocoapods */;
+			targetProxy = A983C64B1E2402F500D531BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A983C6321E2402F500D531BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A983C6331E2402F500D531BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A983C6371E2402F500D531BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A983C6381E2402F500D531BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A983C6511E2402F500D531BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A983C6521E2402F500D531BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A983C6541E2402F500D531BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RappiTest-iOS-Cocoapods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarioAndresVillamizarPalacio.RappiTest-iOS-Cocoapods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A983C6551E2402F500D531BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RappiTest-iOS-Cocoapods/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarioAndresVillamizarPalacio.RappiTest-iOS-Cocoapods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A983C6571E2402F500D531BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RappiTest-iOS-CocoapodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarioAndresVillamizarPalacio.RappiTest-iOS-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RappiTest-iOS-Cocoapods.app/RappiTest-iOS-Cocoapods";
+			};
+			name = Debug;
+		};
+		A983C6581E2402F500D531BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RappiTest-iOS-CocoapodsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarioAndresVillamizarPalacio.RappiTest-iOS-CocoapodsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RappiTest-iOS-Cocoapods.app/RappiTest-iOS-Cocoapods";
+			};
+			name = Release;
+		};
+		A983C65A1E2402F500D531BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RappiTest-iOS-CocoapodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarioAndresVillamizarPalacio.RappiTest-iOS-CocoapodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RappiTest-iOS-Cocoapods";
+			};
+			name = Debug;
+		};
+		A983C65B1E2402F500D531BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RappiTest-iOS-CocoapodsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarioAndresVillamizarPalacio.RappiTest-iOS-CocoapodsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "RappiTest-iOS-Cocoapods";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A983C6261E2402F400D531BA /* Build configuration list for PBXProject "RappiTest-iOS-Cocoapods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A983C6511E2402F500D531BA /* Debug */,
+				A983C6521E2402F500D531BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A983C6531E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-Cocoapods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A983C6541E2402F500D531BA /* Debug */,
+				A983C6551E2402F500D531BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A983C6561E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-CocoapodsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A983C6571E2402F500D531BA /* Debug */,
+				A983C6581E2402F500D531BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A983C6591E2402F500D531BA /* Build configuration list for PBXNativeTarget "RappiTest-iOS-CocoapodsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A983C65A1E2402F500D531BA /* Debug */,
+				A983C65B1E2402F500D531BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A983C6231E2402F400D531BA /* Project object */;
+}
