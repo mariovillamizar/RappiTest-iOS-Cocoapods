@@ -15,13 +15,31 @@ class AppTableViewCell: UITableViewCell {
     @IBOutlet weak var appIconImageView: UIImageView!
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var appCompanyLabel: UILabel!
+    @IBOutlet weak var imageViewLoadIndicator: UIActivityIndicatorView!
+    
     
     // MARK: Properties
     
     var app: App!
     
     
+    // MARK: - Outlets Actions
+    
+    @IBAction func seeInAppStoreButtonAction(sender: AnyObject) {
+        let url = NSURL(string: self.app.link!)
+        UIApplication.sharedApplication().openURL(url!)
+    }
+    
+    
     // MARK: Cell Lifecycle Methods
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -38,10 +56,9 @@ class AppTableViewCell: UITableViewCell {
         self.appNameLabel.text = self.app.name
         self.appCompanyLabel.text = self.app.artist
         let url = NSURL(string: (self.app.images?.last?.label)!)
+        self.imageViewLoadIndicator.startAnimating()
         self.appIconImageView.sd_setImageWithURL(url) { (_, error, _, _) in
-            if error != nil {
-                
-            }
+            self.imageViewLoadIndicator.stopAnimating()
         }
     }
 

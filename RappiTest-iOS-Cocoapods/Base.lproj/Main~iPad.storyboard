@@ -6,7 +6,7 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Application List-->
+        <!--Apps-->
         <scene sceneID="Lca-za-xH1">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Ba6-RO-mWJ" customClass="AppCollectionViewController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,34 +53,39 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVf-M4-ozO">
-                                                    <rect key="frame" x="3" y="121" width="94" height="12"/>
+                                                    <rect key="frame" x="3" y="122" width="94" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="b5U-h2-1pZ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXj-0h-TVd">
-                                                    <rect key="frame" x="3" y="103" width="94" height="15"/>
+                                                    <rect key="frame" x="3" y="103" width="94" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="BjZ-bc-mdu"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dza-kr-7jQ">
+                                                    <rect key="frame" x="40" y="40" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
                                             <constraint firstItem="Kac-aw-vkE" firstAttribute="top" secondItem="ykJ-KW-FEE" secondAttribute="top" id="0Bo-7V-vmO"/>
+                                            <constraint firstItem="dza-kr-7jQ" firstAttribute="centerY" secondItem="Kac-aw-vkE" secondAttribute="centerY" id="2KB-Ax-qMK"/>
                                             <constraint firstItem="Kac-aw-vkE" firstAttribute="leading" secondItem="ykJ-KW-FEE" secondAttribute="leading" id="H8r-XA-7YI"/>
                                             <constraint firstItem="MVf-M4-ozO" firstAttribute="leading" secondItem="ykJ-KW-FEE" secondAttribute="leading" constant="3" id="fYE-tr-Sb6"/>
                                             <constraint firstItem="DXj-0h-TVd" firstAttribute="top" secondItem="Kac-aw-vkE" secondAttribute="bottom" constant="3" id="hMp-wW-j59"/>
                                             <constraint firstAttribute="trailing" secondItem="MVf-M4-ozO" secondAttribute="trailing" constant="3" id="ivM-Ub-vUY"/>
                                             <constraint firstAttribute="trailing" secondItem="Kac-aw-vkE" secondAttribute="trailing" id="kJD-qP-Tkh"/>
                                             <constraint firstItem="DXj-0h-TVd" firstAttribute="leading" secondItem="ykJ-KW-FEE" secondAttribute="leading" constant="3" id="r9F-BX-ItH"/>
+                                            <constraint firstItem="dza-kr-7jQ" firstAttribute="centerX" secondItem="Kac-aw-vkE" secondAttribute="centerX" id="sfY-f4-XmU"/>
                                             <constraint firstItem="MVf-M4-ozO" firstAttribute="top" secondItem="DXj-0h-TVd" secondAttribute="bottom" constant="3" id="tZZ-Ib-uUa"/>
                                             <constraint firstAttribute="trailing" secondItem="DXj-0h-TVd" secondAttribute="trailing" constant="3" id="xdZ-lu-BHX"/>
                                         </constraints>
@@ -96,6 +101,7 @@
                                             <outlet property="appCompanyLabel" destination="MVf-M4-ozO" id="HqG-Nf-BPY"/>
                                             <outlet property="appIconImageView" destination="Kac-aw-vkE" id="Pp5-oI-dgO"/>
                                             <outlet property="appNameLabel" destination="DXj-0h-TVd" id="Tk2-Aj-RMU"/>
+                                            <outlet property="imageViewLoadIndicator" destination="dza-kr-7jQ" id="h7j-65-FzK"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -113,16 +119,25 @@
                             <constraint firstItem="uMd-cB-hYK" firstAttribute="top" secondItem="NiH-qL-MGV" secondAttribute="bottom" id="oe0-ld-OcW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Application List" id="5QL-nJ-vui">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="An4-xT-LVF"/>
+                    <navigationItem key="navigationItem" title="Apps" id="5QL-nJ-vui">
+                        <barButtonItem key="backBarButtonItem" title="Apps" id="An4-xT-LVF"/>
                     </navigationItem>
                     <connections>
                         <outlet property="appCollectionView" destination="uMd-cB-hYK" id="sCT-3d-K8s"/>
+                        <segue destination="wsl-md-sDg" kind="show" identifier="toAppDetails" id="etr-Mv-Iug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5s-vE-HhZ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="427" y="135"/>
+        </scene>
+        <!--AppDetails-->
+        <scene sceneID="iy2-Zf-u1j">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main~iPhone" referencedIdentifier="AppDetails" id="wsl-md-sDg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eq9-gU-6nl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="907.5" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VfO-3G-cUe">

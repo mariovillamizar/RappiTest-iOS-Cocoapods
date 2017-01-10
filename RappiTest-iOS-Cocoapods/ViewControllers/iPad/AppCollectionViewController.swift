@@ -42,7 +42,7 @@ class AppCollectionViewController: UIViewController, UICollectionViewDataSource,
         }
     }
     
-    // MARK: - UICollectionView Delegate, DataSource & Layout Methods
+    // MARK: - UICollectionView Delegate & DataSource Methods
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -60,6 +60,19 @@ class AppCollectionViewController: UIViewController, UICollectionViewDataSource,
     
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
         (cell as! AppCollectionViewCell).setData()
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("toAppDetails", sender: indexPath)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toAppDetails" {
+            let indexPath = sender as! NSIndexPath
+            let detailsViewController = segue.destinationViewController as! AppDetailsViewController
+            detailsViewController.app = self.appList[indexPath.row]
+            self.appCollectionView.deselectItemAtIndexPath(indexPath, animated: true)
+        }
     }
 
 }

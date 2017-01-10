@@ -42,7 +42,7 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
-    // MARK: UITableView Delegate & DataSource Methods
+    // MARK: - UITableView Delegate & DataSource Methods
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -68,5 +68,18 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.01
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("toAppDetails", sender: indexPath)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toAppDetails" {
+            let indexPath = sender as! NSIndexPath
+            let detailsViewController = segue.destinationViewController as! AppDetailsViewController
+            detailsViewController.app = self.appList[indexPath.row]
+            self.appsTableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
     }
 }

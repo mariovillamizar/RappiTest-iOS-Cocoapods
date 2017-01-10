@@ -16,6 +16,7 @@ class AppCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var appIconImageView: UIImageView!
     @IBOutlet weak var appNameLabel: UILabel!
     @IBOutlet weak var appCompanyLabel: UILabel!
+    @IBOutlet weak var imageViewLoadIndicator: UIActivityIndicatorView!
     
     // MARK: Properties
     
@@ -39,10 +40,9 @@ class AppCollectionViewCell: UICollectionViewCell {
         self.appNameLabel.text = self.app.name
         self.appCompanyLabel.text = self.app.artist
         let url = NSURL(string: (self.app.images?.last?.label)!)
+        self.imageViewLoadIndicator.startAnimating()
         self.appIconImageView.sd_setImageWithURL(url) { (_, error, _, _) in
-            if error != nil {
-                
-            }
+            self.imageViewLoadIndicator.stopAnimating()
         }
     }
 }

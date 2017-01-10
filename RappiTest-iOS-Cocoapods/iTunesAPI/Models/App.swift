@@ -36,7 +36,7 @@ class App: Mappable {
         contentType     <- map["im:contentType.attributes.label"]
         rights          <- map["rights.label"]
         title           <- map["title.label"]
-        link            <- map["link.href"]
+        link            <- map["link.attributes.href"]
         id              <- map["id"]
         artist          <- map["im:artist.label"]
         category        <- map["category"]
