@@ -10,6 +10,7 @@
 		A92538221E244C2200BE2DCB /* AppDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538211E244C2200BE2DCB /* AppDetailsViewController.swift */; };
 		A92538271E2462C000BE2DCB /* AppDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538261E2462C000BE2DCB /* AppDescriptionTableViewCell.swift */; };
 		A92538291E2487B700BE2DCB /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538281E2487B700BE2DCB /* BasicTableViewCell.swift */; };
+		A925382C1E251E2300BE2DCB /* GlobalAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925382B1E251E2300BE2DCB /* GlobalAppearance.swift */; };
 		A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C62E1E2402F500D531BA /* AppDelegate.swift */; };
 		A983C6341E2402F500D531BA /* Main~iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6321E2402F500D531BA /* Main~iPhone.storyboard */; };
 		A983C6361E2402F500D531BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A983C6351E2402F500D531BA /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		A92538211E244C2200BE2DCB /* AppDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDetailsViewController.swift; path = ViewControllers/Both/AppDetailsViewController.swift; sourceTree = "<group>"; };
 		A92538261E2462C000BE2DCB /* AppDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDescriptionTableViewCell.swift; path = ViewControllers/Both/Cells/AppDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		A92538281E2487B700BE2DCB /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicTableViewCell.swift; path = ViewControllers/Both/Cells/BasicTableViewCell.swift; sourceTree = "<group>"; };
+		A925382B1E251E2300BE2DCB /* GlobalAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalAppearance.swift; path = Helpers/GlobalAppearance.swift; sourceTree = "<group>"; };
 		A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RappiTest-iOS-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C62E1E2402F500D531BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A983C6331E2402F500D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main~iPhone.storyboard"; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		A925382A1E251E1100BE2DCB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A925382B1E251E2300BE2DCB /* GlobalAppearance.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		A983C6221E2402F400D531BA = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 				A983C6671E241E0100D531BA /* ViewControllers */,
 				A983C65C1E2405E800D531BA /* iTunesAPI */,
 				A983C66C1E241E5000D531BA /* Extensions */,
+				A925382A1E251E1100BE2DCB /* Helpers */,
 			);
 			path = "RappiTest-iOS-Cocoapods";
 			sourceTree = "<group>";
@@ -471,6 +482,7 @@
 				A983C6791E242DD500D531BA /* AppListViewController.swift in Sources */,
 				A92538221E244C2200BE2DCB /* AppDetailsViewController.swift in Sources */,
 				A983C6601E24062200D531BA /* iTunesClient.swift in Sources */,
+				A925382C1E251E2300BE2DCB /* GlobalAppearance.swift in Sources */,
 				A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */,
 				A983C67C1E242F8200D531BA /* AppTableViewCell.swift in Sources */,
 				A983C66B1E241E4900D531BA /* AppCollectionViewController.swift in Sources */,

@@ -10,7 +10,7 @@
         <!--Apps-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="AppListViewController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AppListViewController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -100,7 +100,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WnE-st-QXR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2DJ-5C-0nl"/>
+                            <constraint firstItem="WnE-st-QXR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lkh-wE-sLD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WnE-st-QXR" secondAttribute="bottom" id="ZFa-10-4PU"/>
                             <constraint firstItem="WnE-st-QXR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eL2-Wq-bTu"/>
                             <constraint firstAttribute="trailing" secondItem="WnE-st-QXR" secondAttribute="trailing" id="mc3-lN-lia"/>
@@ -116,12 +116,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="135"/>
+            <point key="canvasLocation" x="426" y="135"/>
         </scene>
-        <!--App Details View Controller-->
+        <!--Summary-->
         <scene sceneID="3Je-7c-Jf9">
             <objects>
-                <viewController storyboardIdentifier="AppDetails" automaticallyAdjustsScrollViewInsets="NO" id="bNY-FK-3TZ" customClass="AppDetailsViewController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppDetails" id="bNY-FK-3TZ" customClass="AppDetailsViewController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yGM-Ag-YTY"/>
                         <viewControllerLayoutGuide type="bottom" id="E8b-vS-7gY"/>
@@ -384,20 +384,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="M3Y-Pn-KSB" firstAttribute="top" secondItem="CMV-VK-iDq" secondAttribute="top" id="HcU-qo-3Hj"/>
                             <constraint firstAttribute="trailing" secondItem="M3Y-Pn-KSB" secondAttribute="trailing" id="N5P-q0-jLZ"/>
                             <constraint firstItem="M3Y-Pn-KSB" firstAttribute="leading" secondItem="CMV-VK-iDq" secondAttribute="leading" id="XOu-8i-zKF"/>
-                            <constraint firstItem="M3Y-Pn-KSB" firstAttribute="top" secondItem="yGM-Ag-YTY" secondAttribute="bottom" id="bEP-UR-5x6"/>
                             <constraint firstItem="E8b-vS-7gY" firstAttribute="top" secondItem="M3Y-Pn-KSB" secondAttribute="bottom" id="xOF-KA-Orc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xjQ-A6-so7"/>
+                    <navigationItem key="navigationItem" title="Summary" id="xjQ-A6-so7"/>
                     <connections>
                         <outlet property="detailsTableView" destination="M3Y-Pn-KSB" id="7s9-Cp-KqX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFt-GS-Jhy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="135"/>
+            <point key="canvasLocation" x="1201.5" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qFw-AJ-kmT">
@@ -413,7 +413,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Don-hs-VZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="135"/>
+            <point key="canvasLocation" x="-354" y="135"/>
         </scene>
     </scenes>
 </document>
