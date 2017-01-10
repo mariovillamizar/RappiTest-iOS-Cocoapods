@@ -1,12 +1,12 @@
 # RappiTest-iOS-Cocoapods
 
-This is an application for test purposes. The app have three views. 
+This is an application for test purposes. The app have three views:
 
-The first view contains a list of five categories of iOS application togheter with ten applications for each category. This view is named "Categories"
-The second view is shown from the categories view when user tap "SEE ALL APPS" button. This view will present all applications for the selected category. This view is named "Apps"
-A third view is show when user tap on any application from both views "Categories" or "Apps". This view show the summary of the selected application.
+- The first view contains a list of five categories of iOS application togheter with ten applications for each category. This view is named "Categories".
+- The second view is shown from the categories view when user tap "SEE ALL APPS" button. This view will present all applications for the selected category. This view is named "Apps".
+- A third view is show when user tap on any application from both views "Categories" or "Apps". This view show the summary of the selected application.
 
-All code generated in this app is was written by Mario Villamizar Palacio.
+All code generated in this app was written by Mario Villamizar Palacio.
 
 # Requeriments
 
@@ -22,7 +22,8 @@ All code generated in this app is was written by Mario Villamizar Palacio.
 $ gem install cocoapods
 ```
 
-To run this project you must execute the following command:
+This proccess could take some minutes. Then, to run this project you must execute the following command:
+
 
 ```bash
 $ cd ~/Path/To/Folder/Containing/theproject
@@ -35,3 +36,4 @@ Then, run the following command:
 $ pod install
 ```
 
+Now you can run the project.
