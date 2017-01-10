@@ -3,12 +3,19 @@
 This is an application for test purposes. The app have three views:
 
 - The first view contains a list of five categories of iOS application togheter with ten applications for each category. This view is named "Categories".
-- The second view is shown from the categories view when user tap "SEE ALL APPS" button. This view will present all applications for the selected category. This view is named "Apps".
+- The second view is shown from the categories view when user tap "See All Apps" button. This view will present all applications for the selected category. This view is named "Apps".
 - A third view is show when user tap on any application from both views "Categories" or "Apps". This view show the summary of the selected application.
 
-All code generated in this app was written by Mario Villamizar Palacio.
+All code generated in this app was written by Mario Villamizar Palacio. All code and documentation was written in English.
 
-# Requeriments
+# Design Requeriments
+
+- [x] The app works in Portrait for iPhone and Landscape for iPad.
+- [x] The app can work offline if the data was previously fetched. Notifications are shown for Reachability.
+- [x] Apps view is presented as table view for iPhone and collection view for iPad.
+- [x] Some animation were added.
+
+# Run Requeriments
 
 - [x] Xcode 7.3.1
 - [x] Swift 2.3
