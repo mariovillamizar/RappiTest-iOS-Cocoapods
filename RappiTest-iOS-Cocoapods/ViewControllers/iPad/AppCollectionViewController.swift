@@ -15,6 +15,7 @@ class AppCollectionViewController: UIViewController, UICollectionViewDataSource,
     
     
     // MARK: - Properties
+    var categoryName: String!
     private var appList: [App] = []
     
     
@@ -22,6 +23,7 @@ class AppCollectionViewController: UIViewController, UICollectionViewDataSource,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = categoryName
         self.getAppsAndUpdateCollection()
     }
 
@@ -32,10 +34,13 @@ class AppCollectionViewController: UIViewController, UICollectionViewDataSource,
     // MARK: - Data Source Methods
     
     func getAppsAndUpdateCollection() {
-        iTunesClient.shared.getFreeApplications { (apps, error) in
+        self.appCollectionView.hidden = true
+        let categoryName = self.categoryName.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: "")
+        iTunesClient.shared.getApps(ofCategory: categoryName, limit: 100) { (apps, error) in
             if error == nil {
                 if apps != nil {
                     self.appList = apps!
+                    self.appCollectionView.hidden = false
                     self.appCollectionView.reloadData()
                 }
             }
@@ -63,11 +68,11 @@ class AppCollectionViewController: UIViewController, UICollectionViewDataSource,
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("toAppDetails", sender: indexPath)
+        self.performSegueWithIdentifier("toAppSummary", sender: indexPath)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toAppDetails" {
+        if segue.identifier == "toAppSummary" {
             let indexPath = sender as! NSIndexPath
             let detailsViewController = segue.destinationViewController as! AppDetailsViewController
             detailsViewController.app = self.appList[indexPath.row]

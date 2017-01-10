@@ -15,6 +15,7 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     // MARK: - Properties
+    var categoryName: String!
     private var appList: [App] = []
     
     
@@ -22,6 +23,7 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = categoryName
         self.getAppsAndUpdateTableView()
     }
     
@@ -32,10 +34,13 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
     // MARK: - Data Source Methods
     
     func getAppsAndUpdateTableView() {
-        iTunesClient.shared.getFreeApplications { (apps, error) in
+        self.appsTableView.hidden = true
+        let categoryName = self.categoryName.lowercaseString.stringByReplacingOccurrencesOfString(" ", withString: "")
+        iTunesClient.shared.getApps(ofCategory: categoryName, limit: 100) { (apps, error) in
             if error == nil {
                 if apps != nil {
                     self.appList = apps!
+                    self.appsTableView.hidden = false
                     self.appsTableView.reloadData()
                 }
             }
@@ -71,11 +76,11 @@ class AppListViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("toAppDetails", sender: indexPath)
+        self.performSegueWithIdentifier("toAppSummary", sender: indexPath)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toAppDetails" {
+        if segue.identifier == "toAppSummary" {
             let indexPath = sender as! NSIndexPath
             let detailsViewController = segue.destinationViewController as! AppDetailsViewController
             detailsViewController.app = self.appList[indexPath.row]

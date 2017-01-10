@@ -18,9 +18,27 @@ class iTunesClient: NSObject {
     
     // MARK: - Queries
     
-    func getFreeApplications(completionHandler: (apps: [App]?, error: NSError?) -> Void) {
+    func getApps(ofCategory category: String, limit: Int, completionHandler: (apps: [App]?, error: NSError?) -> Void) {
         
-        let endPoint = "topfreeapplications/limit=20/json"
+        let endPoint = String(format: "%@/limit=%d/json", category, limit)
+        let url = iTunesBaseURL + endPoint
+        
+        Alamofire.request(.GET, url).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let JSON = (response.result.value as? [String: AnyObject])!["feed"]!["entry"] {
+                    let applications = Mapper<App>().mapArray(JSON)
+                    completionHandler(apps: applications, error: nil)
+                }
+            case .Failure(let error):
+                completionHandler(apps: nil, error: error)
+            }
+        }
+    }
+    
+    func getFreeApps(completionHandler: (apps: [App]?, error: NSError?) -> Void) {
+        
+        let endPoint = "topfreeapplications/limit=50/json"
         let url = iTunesBaseURL + endPoint
         
         Alamofire.request(.GET, url).validate().responseJSON { response in

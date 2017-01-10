@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A92538221E244C2200BE2DCB /* AppDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538211E244C2200BE2DCB /* AppDetailsViewController.swift */; };
-		A92538271E2462C000BE2DCB /* AppDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538261E2462C000BE2DCB /* AppDescriptionTableViewCell.swift */; };
-		A92538291E2487B700BE2DCB /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538281E2487B700BE2DCB /* BasicTableViewCell.swift */; };
 		A925382C1E251E2300BE2DCB /* GlobalAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925382B1E251E2300BE2DCB /* GlobalAppearance.swift */; };
+		A92538311E25464900BE2DCB /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538301E25464900BE2DCB /* CategoriesViewController.swift */; };
+		A92538391E257EA700BE2DCB /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538351E257EA700BE2DCB /* AppCollectionViewCell.swift */; };
+		A925383A1E257EA700BE2DCB /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538361E257EA700BE2DCB /* AppTableViewCell.swift */; };
+		A925383B1E257EA700BE2DCB /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538371E257EA700BE2DCB /* BasicTableViewCell.swift */; };
+		A925383C1E257EA700BE2DCB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538381E257EA700BE2DCB /* CategoryTableViewCell.swift */; };
 		A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C62E1E2402F500D531BA /* AppDelegate.swift */; };
 		A983C6341E2402F500D531BA /* Main~iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6321E2402F500D531BA /* Main~iPhone.storyboard */; };
 		A983C6361E2402F500D531BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A983C6351E2402F500D531BA /* Assets.xcassets */; };
@@ -21,11 +24,9 @@
 		A983C6621E24062900D531BA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6611E24062900D531BA /* App.swift */; };
 		A983C66B1E241E4900D531BA /* AppCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C66A1E241E4900D531BA /* AppCollectionViewController.swift */; };
 		A983C66F1E241F7600D531BA /* Main~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C66D1E241F7600D531BA /* Main~iPad.storyboard */; };
-		A983C6731E2425C000D531BA /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6721E2425C000D531BA /* AppCollectionViewCell.swift */; };
 		A983C6761E24296800D531BA /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6741E24296800D531BA /* UINavigationController+Extension.swift */; };
 		A983C6771E24296800D531BA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6751E24296800D531BA /* UIView+Extension.swift */; };
 		A983C6791E242DD500D531BA /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C6781E242DD500D531BA /* AppListViewController.swift */; };
-		A983C67C1E242F8200D531BA /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C67B1E242F8200D531BA /* AppTableViewCell.swift */; };
 		AF5529FB96F6189376A09590 /* Pods_RappiTest_iOS_Cocoapods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +51,12 @@
 		3ED0875E56ABCCF972EA220E /* Pods-RappiTest-iOS-Cocoapods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTest-iOS-Cocoapods.release.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods.release.xcconfig"; sourceTree = "<group>"; };
 		7FF40BA220655A1BFDF4F5B0 /* Pods_RappiTest_iOS_Cocoapods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RappiTest_iOS_Cocoapods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92538211E244C2200BE2DCB /* AppDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDetailsViewController.swift; path = ViewControllers/Both/AppDetailsViewController.swift; sourceTree = "<group>"; };
-		A92538261E2462C000BE2DCB /* AppDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDescriptionTableViewCell.swift; path = ViewControllers/Both/Cells/AppDescriptionTableViewCell.swift; sourceTree = "<group>"; };
-		A92538281E2487B700BE2DCB /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicTableViewCell.swift; path = ViewControllers/Both/Cells/BasicTableViewCell.swift; sourceTree = "<group>"; };
 		A925382B1E251E2300BE2DCB /* GlobalAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalAppearance.swift; path = Helpers/GlobalAppearance.swift; sourceTree = "<group>"; };
+		A92538301E25464900BE2DCB /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesViewController.swift; path = ViewControllers/Both/CategoriesViewController.swift; sourceTree = "<group>"; };
+		A92538351E257EA700BE2DCB /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCollectionViewCell.swift; path = Cells/AppCollectionViewCell.swift; sourceTree = "<group>"; };
+		A92538361E257EA700BE2DCB /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppTableViewCell.swift; path = Cells/AppTableViewCell.swift; sourceTree = "<group>"; };
+		A92538371E257EA700BE2DCB /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicTableViewCell.swift; path = Cells/BasicTableViewCell.swift; sourceTree = "<group>"; };
+		A92538381E257EA700BE2DCB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = Cells/CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RappiTest-iOS-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C62E1E2402F500D531BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A983C6331E2402F500D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main~iPhone.storyboard"; sourceTree = "<group>"; };
@@ -69,11 +73,9 @@
 		A983C6611E24062900D531BA /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = App.swift; path = iTunesAPI/Models/App.swift; sourceTree = "<group>"; };
 		A983C66A1E241E4900D531BA /* AppCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCollectionViewController.swift; path = ViewControllers/iPad/AppCollectionViewController.swift; sourceTree = "<group>"; };
 		A983C66E1E241F7600D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main~iPad.storyboard"; sourceTree = "<group>"; };
-		A983C6721E2425C000D531BA /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppCollectionViewCell.swift; path = ViewControllers/iPad/Cells/AppCollectionViewCell.swift; sourceTree = "<group>"; };
 		A983C6741E24296800D531BA /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Extension.swift"; path = "Extensions/UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		A983C6751E24296800D531BA /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Extensions/UIView+Extension.swift"; sourceTree = "<group>"; };
 		A983C6781E242DD500D531BA /* AppListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppListViewController.swift; path = ViewControllers/iPhone/AppListViewController.swift; sourceTree = "<group>"; };
-		A983C67B1E242F8200D531BA /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppTableViewCell.swift; path = ViewControllers/iPhone/Cells/AppTableViewCell.swift; sourceTree = "<group>"; };
 		F6E6DC372CA3C094A7843E57 /* Pods-RappiTest-iOS-Cocoapods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RappiTest-iOS-Cocoapods/Pods-RappiTest-iOS-Cocoapods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,19 +125,10 @@
 		A92538201E244BC600BE2DCB /* Both */ = {
 			isa = PBXGroup;
 			children = (
+				A92538301E25464900BE2DCB /* CategoriesViewController.swift */,
 				A92538211E244C2200BE2DCB /* AppDetailsViewController.swift */,
-				A92538231E245C1D00BE2DCB /* Cells */,
 			);
 			name = Both;
-			sourceTree = "<group>";
-		};
-		A92538231E245C1D00BE2DCB /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				A92538261E2462C000BE2DCB /* AppDescriptionTableViewCell.swift */,
-				A92538281E2487B700BE2DCB /* BasicTableViewCell.swift */,
-			);
-			name = Cells;
 			sourceTree = "<group>";
 		};
 		A925382A1E251E1100BE2DCB /* Helpers */ = {
@@ -144,6 +137,17 @@
 				A925382B1E251E2300BE2DCB /* GlobalAppearance.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A92538341E257E3100BE2DCB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A92538351E257EA700BE2DCB /* AppCollectionViewCell.swift */,
+				A92538361E257EA700BE2DCB /* AppTableViewCell.swift */,
+				A92538371E257EA700BE2DCB /* BasicTableViewCell.swift */,
+				A92538381E257EA700BE2DCB /* CategoryTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		A983C6221E2402F400D531BA = {
@@ -174,9 +178,10 @@
 				A983C62E1E2402F500D531BA /* AppDelegate.swift */,
 				A983C6351E2402F500D531BA /* Assets.xcassets */,
 				A983C63A1E2402F500D531BA /* Info.plist */,
+				A983C65C1E2405E800D531BA /* iTunesAPI */,
 				A983C6701E241F8C00D531BA /* Storyboards */,
 				A983C6671E241E0100D531BA /* ViewControllers */,
-				A983C65C1E2405E800D531BA /* iTunesAPI */,
+				A92538341E257E3100BE2DCB /* Cells */,
 				A983C66C1E241E5000D531BA /* Extensions */,
 				A925382A1E251E1100BE2DCB /* Helpers */,
 			);
@@ -240,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				A983C6781E242DD500D531BA /* AppListViewController.swift */,
-				A983C67A1E242F4600D531BA /* Cells */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -249,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				A983C66A1E241E4900D531BA /* AppCollectionViewController.swift */,
-				A983C6711E24259500D531BA /* Cells */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -271,22 +274,6 @@
 				A983C66D1E241F7600D531BA /* Main~iPad.storyboard */,
 			);
 			name = Storyboards;
-			sourceTree = "<group>";
-		};
-		A983C6711E24259500D531BA /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				A983C6721E2425C000D531BA /* AppCollectionViewCell.swift */,
-			);
-			name = Cells;
-			sourceTree = "<group>";
-		};
-		A983C67A1E242F4600D531BA /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				A983C67B1E242F8200D531BA /* AppTableViewCell.swift */,
-			);
-			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,19 +462,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A92538291E2487B700BE2DCB /* BasicTableViewCell.swift in Sources */,
 				A983C6621E24062900D531BA /* App.swift in Sources */,
 				A983C6771E24296800D531BA /* UIView+Extension.swift in Sources */,
-				A92538271E2462C000BE2DCB /* AppDescriptionTableViewCell.swift in Sources */,
 				A983C6791E242DD500D531BA /* AppListViewController.swift in Sources */,
 				A92538221E244C2200BE2DCB /* AppDetailsViewController.swift in Sources */,
 				A983C6601E24062200D531BA /* iTunesClient.swift in Sources */,
+				A925383A1E257EA700BE2DCB /* AppTableViewCell.swift in Sources */,
+				A925383B1E257EA700BE2DCB /* BasicTableViewCell.swift in Sources */,
 				A925382C1E251E2300BE2DCB /* GlobalAppearance.swift in Sources */,
 				A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */,
-				A983C67C1E242F8200D531BA /* AppTableViewCell.swift in Sources */,
 				A983C66B1E241E4900D531BA /* AppCollectionViewController.swift in Sources */,
-				A983C6731E2425C000D531BA /* AppCollectionViewCell.swift in Sources */,
+				A92538311E25464900BE2DCB /* CategoriesViewController.swift in Sources */,
+				A925383C1E257EA700BE2DCB /* CategoryTableViewCell.swift in Sources */,
 				A983C6761E24296800D531BA /* UINavigationController+Extension.swift in Sources */,
+				A92538391E257EA700BE2DCB /* AppCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

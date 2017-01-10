@@ -9,4 +9,5 @@ target 'RappiTest-iOS-Cocoapods' do
 	pod 'Alamofire','3.5.0'
 	pod 'ObjectMapper','1.5.0'
 	pod 'SDWebImage'
+	pod 'JFMinimalNotifications'
 end

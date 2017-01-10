@@ -39,20 +39,23 @@ class AppDetailsViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        var numberOfRows = 0
+        if self.app.summary != nil { numberOfRows += 1 }
+        if self.app.rights != nil { numberOfRows += 1 }
+        return numberOfRows
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("summaryCell", forIndexPath: indexPath) as! AppDescriptionTableViewCell
-            cell.titleLabel.text = "Summary"
-            cell.descriptionLabel.text = self.app.summary
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("basicCell", forIndexPath: indexPath) as! BasicTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("basicCell", forIndexPath: indexPath) as! BasicTableViewCell
+        switch indexPath.row {
+        case 0:
+            cell.titleLabel.text = self.app.summary == nil ? self.app.rights : self.app.summary 
+        case 1:
             cell.titleLabel.text = self.app.rights
-            return cell
+        default:
+            cell.titleLabel.text = nil
         }
+        return cell
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
