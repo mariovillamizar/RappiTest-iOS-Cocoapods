@@ -165,10 +165,10 @@
             </objects>
             <point key="canvasLocation" x="59.5" y="597"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="VfO-3G-cUe">
             <objects>
-                <navigationController id="fN6-X6-aaW" sceneMemberID="viewController">
+                <navigationController id="fN6-X6-aaW" customClass="MainNavigationController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jpF-qB-pYz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

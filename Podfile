@@ -10,4 +10,5 @@ target 'RappiTest-iOS-Cocoapods' do
 	pod 'ObjectMapper','1.5.0'
 	pod 'SDWebImage'
 	pod 'JFMinimalNotifications'
+	pod 'Reachability'
 end

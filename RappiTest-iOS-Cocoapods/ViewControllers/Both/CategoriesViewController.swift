@@ -13,17 +13,19 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     // MARK: - Outlets
     
     @IBOutlet weak var categoriesTableView: UITableView!
-
+    
     
     // MARK: - Properties
     
     let categories = ["Top Free Applications", "Top Grossing Applications", "Top Paid Applications", "New Free Applications", "New Paid Applications"]
-    
+    private var tableViewPullRefresh = UIRefreshControl()
+
     
     // MARK: - View Controller Lifecycle Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configurePullRefreshForTableView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +34,17 @@ class CategoriesViewController: UIViewController, UITableViewDataSource, UITable
     
     
     // MARK: - UITableView Delegate & DataSource Methods
+    
+    func configurePullRefreshForTableView() {
+        self.tableViewPullRefresh.addTarget(self, action: #selector(self.reloadTableView) , forControlEvents: .ValueChanged)
+        self.categoriesTableView.addSubview(self.tableViewPullRefresh)
+        self.categoriesTableView.alwaysBounceVertical = true
+    }
+    
+    func reloadTableView()  {
+        self.categoriesTableView.reloadData()
+        self.tableViewPullRefresh.endRefreshing()
+    }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1

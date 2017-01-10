@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Reachability
 
 protocol CategoryTableViewCellDelegate: class {
     func seeSummaryOfApp(app: App)
@@ -23,6 +24,7 @@ class CategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
     
     // MARK: - Properties
     var categoryName: String!
+    var reach: Reachability?
     weak var delegate: CategoryTableViewCellDelegate?
     private var appList: [App] = []
     
@@ -39,6 +41,7 @@ class CategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
     
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
+        self.listenReachability()
         self.appsCollectionView.delegate = self
         self.appsCollectionView.dataSource = self
     }
@@ -104,5 +107,22 @@ class CategoryTableViewCell: UITableViewCell, UICollectionViewDataSource, UIColl
         self.delegate?.seeAllAppsOfCategory(self.categoryName)
     }
     
+    // MARK: - Reachability Methods
+    
+    func listenReachability() {
+        self.reach = Reachability.reachabilityForInternetConnection()
+        self.reach!.reachableOnWWAN = false
+        NSNotificationCenter.defaultCenter().addObserver(self,
+                                                         selector: #selector(self.reachabilityChanged(_:)),
+                                                         name: kReachabilityChangedNotification,
+                                                         object: nil)
+        self.reach!.startNotifier()
+    }
+    
+    func reachabilityChanged(notification: NSNotification) {
+        if !self.reach!.isReachableViaWiFi() || !self.reach!.isReachableViaWWAN() {
+            self.getAppsAndUpdateCollection()
+        }
+    }
 
 }

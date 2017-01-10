@@ -368,10 +368,10 @@
             </objects>
             <point key="canvasLocation" x="71" y="913"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="qFw-AJ-kmT">
             <objects>
-                <navigationController id="oh0-Oe-ftO" sceneMemberID="viewController">
+                <navigationController id="oh0-Oe-ftO" customClass="MainNavigationController" customModule="RappiTest_iOS_Cocoapods" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gAG-uM-7G2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -563,6 +563,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ofr-Re-obc"/>
+        <segue reference="7qt-tB-6UH"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -14,6 +14,7 @@
 		A925383A1E257EA700BE2DCB /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538361E257EA700BE2DCB /* AppTableViewCell.swift */; };
 		A925383B1E257EA700BE2DCB /* BasicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538371E257EA700BE2DCB /* BasicTableViewCell.swift */; };
 		A925383C1E257EA700BE2DCB /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92538381E257EA700BE2DCB /* CategoryTableViewCell.swift */; };
+		A925383F1E25815B00BE2DCB /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925383E1E25815B00BE2DCB /* MainNavigationController.swift */; };
 		A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A983C62E1E2402F500D531BA /* AppDelegate.swift */; };
 		A983C6341E2402F500D531BA /* Main~iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A983C6321E2402F500D531BA /* Main~iPhone.storyboard */; };
 		A983C6361E2402F500D531BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A983C6351E2402F500D531BA /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		A92538361E257EA700BE2DCB /* AppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppTableViewCell.swift; path = Cells/AppTableViewCell.swift; sourceTree = "<group>"; };
 		A92538371E257EA700BE2DCB /* BasicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicTableViewCell.swift; path = Cells/BasicTableViewCell.swift; sourceTree = "<group>"; };
 		A92538381E257EA700BE2DCB /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = Cells/CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		A925383E1E25815B00BE2DCB /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainNavigationController.swift; path = Subclasses/MainNavigationController.swift; sourceTree = "<group>"; };
 		A983C62B1E2402F400D531BA /* RappiTest-iOS-Cocoapods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RappiTest-iOS-Cocoapods.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A983C62E1E2402F500D531BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A983C6331E2402F500D531BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main~iPhone.storyboard"; sourceTree = "<group>"; };
@@ -150,6 +152,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		A925383D1E25813100BE2DCB /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				A925383E1E25815B00BE2DCB /* MainNavigationController.swift */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
 		A983C6221E2402F400D531BA = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 				A983C6671E241E0100D531BA /* ViewControllers */,
 				A92538341E257E3100BE2DCB /* Cells */,
 				A983C66C1E241E5000D531BA /* Extensions */,
+				A925383D1E25813100BE2DCB /* Subclasses */,
 				A925382A1E251E1100BE2DCB /* Helpers */,
 			);
 			path = "RappiTest-iOS-Cocoapods";
@@ -471,6 +482,7 @@
 				A925383B1E257EA700BE2DCB /* BasicTableViewCell.swift in Sources */,
 				A925382C1E251E2300BE2DCB /* GlobalAppearance.swift in Sources */,
 				A983C62F1E2402F500D531BA /* AppDelegate.swift in Sources */,
+				A925383F1E25815B00BE2DCB /* MainNavigationController.swift in Sources */,
 				A983C66B1E241E4900D531BA /* AppCollectionViewController.swift in Sources */,
 				A92538311E25464900BE2DCB /* CategoriesViewController.swift in Sources */,
 				A925383C1E257EA700BE2DCB /* CategoryTableViewCell.swift in Sources */,
