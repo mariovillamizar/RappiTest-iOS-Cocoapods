@@ -6,7 +6,7 @@ This is an application for test purposes. The app have three views:
 - The second view is shown from the categories view when user tap "See All Apps" button. This view will present all applications for the selected category. This view is named "Apps".
 - A third view is show when user tap on any application from both views "Categories" or "Apps". This view show the summary of the selected application.
 
-All code generated in this app was written by Mario Villamizar Palacio. All code and documentation was written in English.
+All code generated in this app was written by Mario Villamizar Palacio, except the helper libraries code. All code and documentation is written in English.
 
 # Design Requeriments
 
