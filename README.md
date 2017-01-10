@@ -44,3 +44,13 @@ $ pod install
 ```
 
 Now you can run the project.
+
+# Helper Libraries
+
+Some libraries with proven functionality are used in the project:
+
+- [Alamofire](https://github.com/Alamofire/Alamofire)
+- [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
+- [SDWebImage](https://github.com/rs/SDWebImage)
+- [Reachability](https://github.com/tonymillion/Reachability)
+- [JFMinimalNotifications](https://github.com/atljeremy/JFMinimalNotifications)
